@@ -17,7 +17,7 @@ use std::io::Cursor;
 /// let better_not = PortAddress::from(0);
 /// ```
 #[derive(Debug, PartialEq, Eq, PartialOrd, Ord, Hash, Clone, Copy)]
-pub struct PortAddress(u16);
+pub struct PortAddress(pub u16);
 
 // basic support for u8 literals
 impl From<u8> for PortAddress {
